@@ -63,12 +63,12 @@ const displayAverageSalary = function (employeesArray) {
 
     sum = sum + currentEmployee.salary;
 
-    console.log(sum);
+    //console.log(sum);
 
   }
   average = sum / employeesArray.length;
 
-  console.log ( `The average salary is: $ ${average}`)
+  console.log ( `The average salary between our ${employeesArray.length} employees is: $ ${average}`)
 
   return average;
   
@@ -78,22 +78,23 @@ const displayAverageSalary = function (employeesArray) {
 
 
 
-//onsole.log ( `The average salary is: $ ${displayAverageSalary}`)
-//console.log (average);
-//console.log(employeesArray);
-//console.log(Object.values(employee));
-//return sum;
-
-// Sum all salaries and promedio 
-// display data 
-
-
-
-
-
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
+
+  const index = Math.floor(Math.random() * employeesArray.length);
+
+//Number.valueOf(index);
+
+console.log(`Congrats, ${employeesArray[index].firstName} ${employeesArray[index].lastName} you are our random drawing winner!`);
+
+
+//let random = 0;
+
+//for (let i = 0; i < employeesArray.length; i++)
+
+
+
 
   // Make arandomizer with Math 
   // Select that number in the array index
