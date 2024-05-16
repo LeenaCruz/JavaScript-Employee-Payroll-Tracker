@@ -3,9 +3,9 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
 const collectEmployees = function () {
-  // TODO: Get user input to create and return an array of employee objects
+
   const employeesArray = [];
-  let keepAdding = true; // if trying to redeclared it use let
+  let keepAdding = true; // Remember to use let if trying to redeclared variable value.
 
   while (keepAdding) {
 
@@ -20,7 +20,7 @@ const collectEmployees = function () {
       salary = salary;
     }
 
-  
+
     // This is an object with keys (properties).
     const employee = {
       firstName: firstName,
@@ -35,11 +35,9 @@ const collectEmployees = function () {
 
   }
 
-
   return employeesArray;
 
 }
-
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
@@ -55,12 +53,11 @@ const displayAverageSalary = function (employeesArray) {
   }
   average = sum / employeesArray.length;
 
-  console.log ( `The average employee salary between our ${employeesArray.length} employees is: $ ${average}`)
+  console.log(`The average employee salary between our ${employeesArray.length} employees is: $ ${average}`)
 
   return average;
-  
-}
 
+}
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
@@ -68,7 +65,7 @@ const getRandomEmployee = function (employeesArray) {
   // Creates a random number between 0 and 1, round it as an integer and multiply it by the lenght of the array to give you a random index.
   const index = Math.floor(Math.random() * employeesArray.length);
 
-console.log(`Congrats, ${employeesArray[index].firstName} ${employeesArray[index].lastName} you are our random drawing winner!`);
+  console.log(`Congrats, ${employeesArray[index].firstName} ${employeesArray[index].lastName} you are our random drawing winner!`);
 
 }
 
