@@ -20,14 +20,7 @@ const collectEmployees = function () {
       salary = salary;
     }
 
-    // if (salary.isNaN(x)) {
-    //   return 'Number NaN';
-    // }
-    // if (isNaN(x)) {
-    //   return 'NaN';
-    // }
-
-
+  
     // This is an object with keys (properties).
     const employee = {
       firstName: firstName,
@@ -42,8 +35,6 @@ const collectEmployees = function () {
 
   }
 
-  //console.log(salary);
-  //console.log(employeesArray);
 
   return employeesArray;
 
@@ -52,10 +43,8 @@ const collectEmployees = function () {
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
 
-  // quiero acceder al valor del key salary de cada objeto en mi index
-  //despues quiero hacer un for que sume cada uno de esot svalores y los divida entre el nuemrodevores que hay
+  // This code access the key property of salary of each object in the array and make an average of salary.
   let sum = 0;
   let average = 0;
   for (let i = 0; i < employeesArray.length; i++) {
@@ -63,41 +52,24 @@ const displayAverageSalary = function (employeesArray) {
 
     sum = sum + currentEmployee.salary;
 
-    //console.log(sum);
-
   }
   average = sum / employeesArray.length;
 
-  console.log ( `The average salary between our ${employeesArray.length} employees is: $ ${average}`)
+  console.log ( `The average employee salary between our ${employeesArray.length} employees is: $ ${average}`)
 
   return average;
   
-
-
 }
-
 
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
-  // TODO: Select and display a random employee
 
+  // Creates a random number between 0 and 1, round it as an integer and multiply it by the lenght of the array to give you a random index.
   const index = Math.floor(Math.random() * employeesArray.length);
-
-//Number.valueOf(index);
 
 console.log(`Congrats, ${employeesArray[index].firstName} ${employeesArray[index].lastName} you are our random drawing winner!`);
 
-
-//let random = 0;
-
-//for (let i = 0; i < employeesArray.length; i++)
-
-
-
-
-  // Make arandomizer with Math 
-  // Select that number in the array index
 }
 
 /*
