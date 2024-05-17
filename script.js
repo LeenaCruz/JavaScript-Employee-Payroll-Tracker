@@ -65,7 +65,7 @@ const getRandomEmployee = function (employeesArray) {
   // Creates a random number between 0 and 1, round it as an integer and multiply it by the lenght of the array to give you a random index.
   const index = Math.floor(Math.random() * employeesArray.length);
 
-  console.log(`Congrats, ${employeesArray[index].firstName} ${employeesArray[index].lastName} you are our random drawing winner!`);
+  console.log(`Congratulations to ${employeesArray[index].firstName} ${employeesArray[index].lastName}, our random drawing winner!`);
 
 }
 
