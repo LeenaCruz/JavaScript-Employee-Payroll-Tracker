@@ -16,10 +16,8 @@ const collectEmployees = function () {
     if (isNaN(salary)) {
       salary = 0;
     }
-    else {
-      salary = salary;
-    }
 
+  // Research: How to limit to positive numbers only.
 
     // This is an object with keys (properties).
     const employee = {
