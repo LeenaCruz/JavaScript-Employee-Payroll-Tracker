@@ -14,10 +14,8 @@ const collectEmployees = function () {
     const lastName = prompt("Enter Last Name");
     let salary = Number(prompt("Enter Salary"));
 // Check if salary is not negative number.
-    if (salary < 0 ) {
+    while (salary < 0 ) {
       salary = Number(prompt("Please enter a positive salary number:"));
-//This converts salary to positive number.  Peace was not an option.
-      salary = Math.abs(salary); 
     }
 
    if (isNaN(salary)) {
