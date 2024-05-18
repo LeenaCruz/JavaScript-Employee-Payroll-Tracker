@@ -13,11 +13,16 @@ const collectEmployees = function () {
     const firstName = prompt("Enter First Name");
     const lastName = prompt("Enter Last Name");
     let salary = Number(prompt("Enter Salary"));
-    if (isNaN(salary)) {
-      salary = 0;
+// Check if salary is not negative number.
+    if (salary < 0 ) {
+      salary = Number(prompt("Please enter a positive salary number:"));
+//This converts salary to positive number.  Peace was not an option.
+      salary = Math.abs(salary); 
     }
 
-  // Research: How to limit to positive numbers only.
+   if (isNaN(salary)) {
+      salary = 0;
+    }
 
     // This is an object with keys (properties).
     const employee = {
